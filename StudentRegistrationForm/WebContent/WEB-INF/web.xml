@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd" version="3.1">
+  <display-name>StudentRegistration</display-name>
+
+  <welcome-file-list>
+    <welcome-file>LoginUser.html</welcome-file>
+  </welcome-file-list>
+  
+   <servlet>
+  	<servlet-name>loginUser</servlet-name>
+  	<servlet-class>com.bridgeLabz.StudentForm.StudentLogin.LoginUser</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+  	<servlet-name>loginUser</servlet-name>
+  	<url-pattern>/loginUserServlet</url-pattern>
+  </servlet-mapping>
+  
+  <!-- <servlet>
+  	<servlet-name>loginform</servlet-name>
+  	<servlet-class>com.bridgeLabz.StudentForm.StudentLogin.LoginForm</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+  	<servlet-name>loginform</servlet-name>
+  	<url-pattern>/loginformservlet</url-pattern>
+  </servlet-mapping> -->
+  
+  <servlet>
+  	<servlet-name>Registerform1</servlet-name>
+  	<servlet-class>com.bridgeLabz.StudentForm.StudentLogin.RegisterForm</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+  	<servlet-name>Registerform1</servlet-name>
+  	<url-pattern>/Registerformservlet</url-pattern>
+  </servlet-mapping>
+</web-app>
